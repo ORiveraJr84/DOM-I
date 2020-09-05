@@ -38,7 +38,7 @@ const siteContent = {
     email: "sales@greatidea.io",
   },
   footer: {
-    copyright: "Copyright Great Idea! 2018",
+    copyright: `Copyright Great Idea! ${new Date().getFullYear()}`,
   },
 };
 
