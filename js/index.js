@@ -85,3 +85,33 @@ aboutText.textContent = siteContent["main-content"]["about-content"];
 
 let middleImg = document.querySelector("#middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+let servicesTitle = document.querySelectorAll(
+  ".bottom-content > .text-content > h4"
+)[0];
+servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesText = document.querySelectorAll(
+  ".bottom-content > .text-content > p"
+)[0];
+servicesText.textContent = siteContent["main-content"]["services-content"];
+
+let productTitle = document.querySelectorAll(
+  ".bottom-content > .text-content > h4"
+)[1];
+productTitle.textContent = siteContent["main-content"]["product-h4"];
+
+let productText = document.querySelectorAll(
+  ".bottom-content > .text-content > p"
+)[1];
+productText.textContent = siteContent["main-content"]["product-content"];
+
+let visionTitle = document.querySelectorAll(
+  ".bottom-content > .text-content > h4"
+)[2];
+visionTitle.textContent = siteContent["main-content"]["vision-h4"];
+
+let visionText = document.querySelectorAll(
+  ".bottom-content > .text-content > p"
+)[2];
+visionText.textContent = siteContent["main-content"]["vision-content"];
