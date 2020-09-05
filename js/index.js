@@ -82,3 +82,6 @@ let aboutText = document.querySelectorAll(
   ".top-content > .text-content > p"
 )[1];
 aboutText.textContent = siteContent["main-content"]["about-content"];
+
+let middleImg = document.querySelector("#middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
