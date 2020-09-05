@@ -47,11 +47,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 /******************* My Code *******************/
-let navLinks = Array.from(
-  document.querySelectorAll(".container > header > nav > a")
-);
+let navLinks = document.querySelectorAll(".container > header > nav > a");
 
 for (let i = 0; i < navLinks.length; i++) {
   const element = navLinks[i];
   element.textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }
+
+let ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent["cta"]["img-src"];
