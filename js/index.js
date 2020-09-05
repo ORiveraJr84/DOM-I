@@ -54,5 +54,11 @@ for (let i = 0; i < navLinks.length; i++) {
   element.textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }
 
+let ctaH1 = document.querySelector(".cta-text > h1");
+ctaH1.textContent = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector(".cta-text > button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
 let ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
