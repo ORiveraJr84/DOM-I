@@ -47,11 +47,24 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 /******************* My Code *******************/
+let nav = document.querySelector("nav");
 let navLinks = document.querySelectorAll(".container > header > nav > a");
+let firstNavLink = document.createElement("a");
+firstNavLink.textContent = "Home";
+firstNavLink.style.color = "green";
+firstNavLink.style.cursor = "pointer";
+let lastNavLink = document.createElement("a");
+lastNavLink.textContent = "Meet The Team";
+lastNavLink.style.color = "green";
+lastNavLink.style.cursor = "pointer";
+
+nav.prepend(firstNavLink);
+nav.appendChild(lastNavLink);
 
 for (let i = 0; i < navLinks.length; i++) {
   const element = navLinks[i];
   element.textContent = siteContent["nav"][`nav-item-${i + 1}`];
+  element.style.color = "green";
 }
 
 let ctaH1 = document.querySelector(".cta-text > h1");
@@ -115,3 +128,18 @@ let visionText = document.querySelectorAll(
   ".bottom-content > .text-content > p"
 )[2];
 visionText.textContent = siteContent["main-content"]["vision-content"];
+
+let contact = document.querySelector(".contact > h4");
+contact.textContent = siteContent["contact"]["contact-h4"];
+
+let address = document.querySelectorAll(".contact > p")[0];
+address.textContent = siteContent["contact"]["address"];
+
+let phoneNumber = document.querySelectorAll(".contact > p")[1];
+phoneNumber.textContent = siteContent["contact"]["phone"];
+
+let email = document.querySelectorAll(".contact > p")[2];
+email.textContent = siteContent["contact"]["email"];
+
+let footer = document.querySelector("footer > p");
+footer.textContent = siteContent["footer"]["copyright"];
